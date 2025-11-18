@@ -48,7 +48,7 @@ docker images
 
 *Captura mostrando la imagen helloapp:v1:*
 
-![captura](ruta/de_la_imagen.png)
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20211444.png)
 
 ---
 
@@ -110,17 +110,11 @@ ENV NAME World
 CMD ["python", "app.py"]
 ```
 
-*Evidencia de los tres archivos en el proyecto:*
-![captura](ruta/de_la_imagen.png)
-
 Construimos la imagen:
 
 ```bash
 docker build -t friendlyhello .
 ```
-
-📸 *Captura del build exitoso:*
-![captura](ruta/de_la_imagen.png)
 
 ---
 
@@ -135,7 +129,7 @@ Abrimos en el navegador:
 [http://localhost:4000](http://localhost:4000)
 
 *Captura mostrando “Hello World!” y el hostname:*
-![captura](ruta/de_la_imagen.png)
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20211607.png)
 
 ---
 
@@ -158,17 +152,11 @@ services:
     command: redis-server --appendonly yes
 ```
 
-*Evidencia del archivo docker-compose.yml:*
-![captura](ruta_de_la_imagen.png)
-
 Probamos:
 
 ```bash
 docker compose up
 ```
-
-*Captura del contenedor corriendo:*
-![captura](ruta_de_la_imagen.png)
 
 ---
 
@@ -220,9 +208,6 @@ services:
 docker compose up -d --scale web=5
 ```
 
-📸 *Captura de docker ps mostrando las 5 réplicas:*
-![captura](ruta_de_la_imagen.png)
-
 ---
 
 # **7. Probar el balanceo de carga**
@@ -235,17 +220,14 @@ deberíamos ver **un hostname distinto**.
 
 *Evidencias del hostname cambiando:*
 
-![captura](ruta.png)
-![captura](ruta.png)
-![captura](ruta.png)
-![captura](ruta.png)
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20214340.png)
 
 También verificamos en el dashboard de Traefik:
 
 👉 [http://localhost:8080/dashboard/#/](http://localhost:8080/dashboard/#/)
 
 *Captura del Dashboard mostrando Routers, Services y Middlewares:*
-![captura](ruta.png)
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20214328.png)
 
 ---
 
@@ -276,6 +258,7 @@ docker push username/friendlyhello
 
 * Modificar docker-compose.yml para usar tu propia imagen desde Docker Hub -> isadiac
 * Modificar docker-compose.yml para usar la imagen de un compañero -> papo8888
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20214328.png)
 * Reconstruir la imagen con versión nueva usando etiquetas
 
 ---
