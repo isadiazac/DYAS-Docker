@@ -34,19 +34,11 @@ COPY /hello /
 RUN cat /hello
 ```
 
-*Evidencia del archivo dentro del directorio:*
-
-![captura](ruta/de/la/imagen.png)
-
 Construimos la imagen:
 
 ```bash
 docker build -t helloapp:v1 .
 ```
-
- *Captura del proceso de build:*
-
-![captura](ruta/de/la/imagen.png)
 
 Verificamos la imagen creada:
 
