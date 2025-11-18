@@ -258,6 +258,7 @@ docker push username/friendlyhello
 
 * Modificar docker-compose.yml para usar tu propia imagen desde Docker Hub -> isadiac
 * Modificar docker-compose.yml para usar la imagen de un compañero -> papo8888
+![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20214859.png)
 ![captura](https://github.com/isadiazac/DYAS-Docker/blob/main/Captura%20de%20pantalla%202025-11-17%20214328.png)
 * Reconstruir la imagen con versión nueva usando etiquetas
 
